@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function createPerson(name,qq){       //构造函数
+            //原料
+            var obj=new Object();
+            //加工
+            obj.name=name;
+            obj.qq=qq;
+            obj.showName= function () {
+                alert("我的名字叫："+this.name);
+            };
+            obj.showQQ= function () {
+                alert("我的QQ号："+this.qq);
+            };
+            //出厂
+            return obj;
+        };
+        var obj=createPerson("red","555555");
+        var obj2=createPerson("green","77777")
+        obj.showName();
+        obj.showQQ();
+
+        obj2.showName();
+        obj2.showQQ();
+
+    </script>
+</head>
+<body>
+</body>
+</html>

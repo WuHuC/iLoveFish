@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function aaa(){    //函数：自由
+            alert("abc");
+        }
+        var arr=[1,2,3,4];
+        arr.aaa= function () {   方法：对象
+            alert("abc");
+        }
+        aaa();
+        arr.aaa();
+    </script>
+</head>
+<body>
+</body>
+</html>
