@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var oDate=new Date();
+
+        oDate.setDate(oDate.getDate()+14);
+        document.cookie="user=blue;expires="+oDate;          //cookie中不是覆盖而是添加。
+
+
+        alert(document.cookie);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
