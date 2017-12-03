@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var str="asdf 12 345 vcvcv";
+        //var re=/\d/;   //  \d 转义 数字
+        //alert(str.search(re));
+        var re=/\d+/g;    // g找到全部匹配的 并且提取出来  + 量词：个数 若干
+         alert(str.match(re));
+
+        /*转义字符
+        \d   数字         [0-9]                 \D   [^0-9] 除了0-9以外
+         \w   英文 数字 下划线            [a-z 0-9]     \W    。。。 以此类推
+        \s   空白字符                 \S                  。 。。由此类推
+        量词（个数）
+         {n}  正好出现n次
+         {n,m} 最少n次，最多m次
+         {n,}  最少n次，最多不限
+         +
+        */
+    </script>
+</head>
+<body>
+
+</body>
+</html>
