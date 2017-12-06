@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            font-family:微软雅黑;
+        }
+    </style>
+    <script src="jquery.js"></script>
+</head>
+<body>
+<h1>aaaaaaaaaaaaaaaaaa</h1>
+<h1>aaaaaaaaaaaaaaaaaa</h1>
+<h1>aaaaaaaaaaaaaaaaaa</h1>
+<h1>aaaaaaaaaaaaaaaaaa</h1>
+</body>
+<script>
+    $("h1").each(function (i) {
+        $("h1").get()[i].setAttribute("num",i+1);
+    });
+    $("h1").click(function () {
+        this.innerHTML=this.getAttribute("num");
+    })
+</script>
+</html>

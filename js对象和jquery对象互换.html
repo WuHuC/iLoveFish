@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            font-family:微软雅黑;
+        }
+    </style>
+    <script src="jquery.js"></script>
+</head>
+<body>
+<img src="a.png" alt="" id="imgid">
+</body>
+<script>
+    imgobj=document.getElementById("imgid");
+    $(imgobj).click(function () {
+        $(this).attr({"src":"b.png"});
+    })
+</script>
+</html>

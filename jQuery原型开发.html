@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+<h1>aaaaaaaaa</h1>
+<h1>aaaaaaaaa</h1>
+<h1>aaaaaaaaa</h1>
+</body>
+<script>
+    function $(){
+        obj=new Object();
+        obj.username="user123";
+        obj.say= function () {
+            alert("my name is :"+this.username);
+            return this;
+        };
+        obj.eat= function () {
+            alert("my am eating!");
+        };
+        return obj;
+
+    };
+    //对象链式开发
+    $().say().eat();
+</script>
+</html>
