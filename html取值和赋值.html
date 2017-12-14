@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -16,21 +16,22 @@
 	<script src="jquery.js"></script>
 </head>
 <body>
-	<p>
-		<input type="text">
-	</p>
-	<p>
-		<button>>></button>
-	</p>
-	<p>
-		<input type="text">
-	</p>
+	<div class='d1'>
+		<img src="a.png">
+		<img src="a.png">
+		<img src="a.png">
+		<img src="a.png">
+	</div>
+	<button>>></button>
+	<div class="d2">
+		
+	</div>
 </body>
 <script>
 $('button').click(function(){
-	Aa=$('input').eq(0).val();
-
-	$('input').eq(1).val(Aa);
+	val=$('.d1').html();
+	$('.d2').html(val);
 });
 </script>
 </html>
+
